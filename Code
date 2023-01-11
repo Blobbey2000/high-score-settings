@@ -1,0 +1,20 @@
+//% color="#777CCC"
+//% icon="\uf111"
+namespace Score {
+    /**
+     * Resets high score.
+     */
+    //% block
+    export function ResetHighScore() {
+        blockSettings.remove("high-score")
+    }
+
+    /**
+     * Changes high score value.
+     */
+    //% block
+    export function setHighScoreTo(score: number) {
+        blockSettings.writeNumber("high-score", score)
+    }
+}
+
